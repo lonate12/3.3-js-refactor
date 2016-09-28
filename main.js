@@ -215,7 +215,7 @@ var placeHolder = function(){
   console.log('Hello');
 };
 
-callNtimes(placeHolder, 2);
+callNtimes(placeHolder, 10);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -307,8 +307,20 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+//
+// It returns NaN because when you don't enter an argument the function attempts
+// to add nothing to 0. Nothing is not the same as 0, it's not a number, therefore,
+// when adding nothing to 0 you get NaN.
+//
+var speed = 0;
 
-
+var accelerate = function(amount){
+  if(amount){
+    speed = speed + amount;
+  }else{
+    speed += 1;
+  }
+};
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
