@@ -83,6 +83,13 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// [C]: 'x' will not be print because "letter = y" assigns 'y' and overwrites
+// the 'x'. Then, since there is a timeout function with the first print command,
+// it will not print immediately (although the assignment is done immediately)
+// but be delayed by 1ms. The code then get's to the assignment of letter 'z'
+// and prints it immediately, which happens to be quicker than the 1ms delay of
+// the previous print command. The net effect of all this is that 'z' prints to
+// the console before 'y' does.
 
 // -----------------------------------------------
 
