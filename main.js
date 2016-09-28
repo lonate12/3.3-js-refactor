@@ -363,6 +363,16 @@ var callLater = function(timeout, callback) {
 
 // Put your answer below -------------------------
 
+var callLater = function(timeout, callback){
+  if(typeof timeout == 'number') {
+    setTimeout(callback, timeout);
+  }else if(typeof timeout != 'number'){
+    callback = timeout;
+    setTimeout(callback, 1000);
+ }
+};
+
+console.log(callLater(placeHolder));
 
 // -----------------------------------------------
 
