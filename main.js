@@ -149,6 +149,19 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+var colors = {
+  rojo: '#ff0000',
+  blanco: '#ffffff',
+  azul: '#0000ff',
+  verde: '#00ff00',
+  negro: '#000000'
+};
+
+var spanishColor = function(colorName){
+  return colors[colorName.toLowerCase()];
+};
+
+console.log(spanishColor('rojo'));
 
 // -----------------------------------------------
 
