@@ -206,11 +206,16 @@ var callTenTimes = function(callback) {
 // Put your answer below -------------------------
 
 function callNtimes(someFunction, numTimesToRun){
-  for(var i=0; numTimesToRun<= 10; i++){
+  for(var i=0; i < numTimesToRun; i++){
     someFunction();
   }
 }
 
+var placeHolder = function(){
+  console.log('Hello');
+};
+
+callNtimes(placeHolder, 2);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
