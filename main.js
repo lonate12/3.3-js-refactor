@@ -309,8 +309,7 @@ var accelerate = function(amount) {
 // Put your answer below -------------------------
 //
 // It returns NaN because when you don't enter an argument the function attempts
-// to add nothing to 0. Nothing is not the same as 0, it's not a number, therefore,
-// when adding nothing to 0 you get NaN.
+// to add undefined to 0. When adding undefined to 0 you get NaN.
 //
 var speed = 0;
 
